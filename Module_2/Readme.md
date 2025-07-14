@@ -1,4 +1,4 @@
-<<<<<<< HEAD:Module 2/Readme.md
+
 # **Html CV Project with CSS(Html week 1 project)** #
 
 To open the project file for module 2 html project, follow this folder path
@@ -30,10 +30,8 @@ for this assignation, follow this folder path:
 
 You can open this file with a code editor like Visual Studio Code to view or edit the JavaScript code.
 
-<<<<<<< HEAD
-
 =======
->>>>>>> cc1c5c8 (Readme.md updated)
+
 # **Html CV Project with CSS(Html week 2 project)** #
 
 To open the project file for module 2  week 2, follow this folder path
@@ -90,4 +88,4 @@ To open the project file for module 2  week 2, follow this folder path
 2. Go into the `week 2` folder.
 3. Open the `Poryect html CV` folder.
 4. Inside, you will find the `index.html` file.
->>>>>>> f18056a (quality of life changes, folders name changed and Week2_js folder added):Module_2/Readme.md
+

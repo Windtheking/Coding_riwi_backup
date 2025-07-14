@@ -1,29 +1,45 @@
-let productSet = new Set()
-let productMap = new Map()
+
+// Declaration of object and elements in div
 const products ={
-    1: {id:"1" , name:"Laptop"},
-    2:  {id:"2" , name:"Mouse"},
-    3: {id:"3" , name:"Keyboard"}
+    1: {id:"1" , name:"Laptop" , price: 1500},
+    2:  {id:"2" , name:"Mouse", price: 25},
+    3: {id:"3" , name:"Keyboard", price: 50}
 }
 
 
 
+// Program initialization
+console.log(`\nObject products`, products)
 
-console.log(`Object products ${products}`)
-// for (const product of products){
-//     console.log(`Id: ${id} name: ${this.name}`)
-// }
+// Object conversion to a set
+const productSet = new Set(Object.values(products).map(products => products.name))
+console.log("\nUnique products Set", productSet)
 
-    
-for (const key in products){
-    productSet.add(products)
-    productMap.set(key, products)
-    console.log(productSet)
-    console.log(productMap)
+// Map creation for categorizing products
+const productMap = new Map([
+    ["Electronics", "Laptop"],
+    ["Accesories", "Mouse, Keyboard"]
+])
+console.log("Products and categories Map", productMap)
+
+
+// Product object iteration with for...in and for...of
+for (const id in products){
+    console.log(`\nProduct ID: ${id}, Details:`, products[id])
 }
 
+for (const product of productSet){
+    console.log(`\nUnique product: `, product)
+}
 
-// products.forEach(product => {
-//     console.log(`este es una prueba de productos: ${product.name}`)
-   
-// });
+// productMap iteration
+productMap.forEach((products, key) => {
+    console.log(`\nCategory: ${key}, Product(s): ${products} `);
+})
+
+// Validations and testing
+console.log("\nData gestion, testing complete");
+console.log("Products list(Object)", products);
+console.log("Products list(Set)", productSet);
+console.log("Products list(Map)", productMap);
+
