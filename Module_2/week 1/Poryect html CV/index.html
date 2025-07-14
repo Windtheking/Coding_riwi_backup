@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>My Personal Portafolio</title>
+    <meta name="description" content="Personal Portafolio of Santiago Mendoza as a Riwi developer">
+</head>
+<body>
+
+    <!--Header for presentation of the coder and a nav bar for browsing -->
+    <header>
+
+        <h1>Santiago Andrés Mendoza - Riwi developer</h1>
+        <nav class="nav_bar">
+            <a href="#aboutme">About me</a>
+            <a href="#Projects">Projects</a>
+            <a href="#Bottom">Contacts</a>
+
+        </nav>
+    </header>
+
+    <!--Main for content inside the CV -->
+    <main>
+
+        <!-- curriculum vitae profile picture-->
+        <div class = "pfp">
+            <img  src="./assets/cv_img.jpg" alt="Santiago Mendoza" height="400">
+        </div>
+        
+        <!-- about me section for important information-->
+        <section class="section1">
+
+
+            <div class="content_grid">
+                <!-- Information about my especialities and personality-->
+                <div  id= "insider_main" class="content_box">
+                    <h2 id="aboutme">About me</h2>
+                    <p>Tecnlogical studied, junior software developer, creative, dedicated, problem solver and focused on achieving greatness and sucessfullness, creator of virtual plataforms and cybersecurity.
+                        almost english native speaker with a C1.2 english certificate issued by colombo americano.
+                    </p>
+                    <br>
+                    <p>
+                        Allowing my self to solve problems in the most material and product efficient way, solving inconveniencies and crossing language barriers in comunication
+                    </p>
+                </div>
+                <!-- List of known technlogies -->
+                <div id="insider_main2" class="content_box">
+                
+                    <h2 id="aboutme2">Skill set</h2>
+                    <ul>
+                        <li>Html front-end</li>
+                        <li>JS</li>
+                        <li>CSS</li>
+                        <li>Python</li>
+                        <li>Flask</li>
+                        <li>Comunication skills</li>
+                        <li>Working in teams</li>
+                        <li>Leadership</li>
+                        <li>Creative</li>
+                        <li>Resilient</li>
+                        <li>Problem Solver</li>
+                    </ul>
+                    </div>
+                
+
+
+            
+                
+                
+                
+            </div>
+        </section>
+
+        <!-- Insider section, Section for done projects and a little explpanation-->
+        <section  id="insider_main3" class="content_box">
+            <h2 id="Projects">Projects</h2>
+            <div class="content_container">
+                <div>
+                    <h3>Project 1: Sandwiches Maravilla</h3>
+                    <div>
+                        <p class="1st_text">This was my first project ever made, still in beta phase made for my clients to know where, when and what to buy</p>
+                        <img src="./assets/project_bottom.png" alt="Top of the page project" width="400">
+                        <img src="./assets/project_top.png" alt="Bottom of the page project" width="400">
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <h3>Project 2:</h3>
+                    <p>This  is my second project where I build my Cv Using html and css (click <a href="#top">here</a> to view)</p>
+                </div>
+                
+
+                </div>
+        </section>
+
+        <!--Table for projects and tools used for them-->
+        <section class="section2">
+            <div>  
+                <table id = "the_table" class="main_table">
+                    <!-- table composition -->
+                    <tr>
+                        <th>Project name</th>
+                        <th>Techonologies used</th>
+                        <th>link</th>
+                    </tr>
+
+                    <!--List of tools used for the project-->
+                    <tr>
+                        <td id="content_class4" class = "content_table">Sandwiches Maravilla</td>
+                        <td id="content_class3" class = "content_table">
+                            <ul>
+                                <li class="elements1">Php</li>
+                                <li class="elements2">Html</li>
+                                <li class="elements3">Css</li>
+                                <li class="elements4">JS</li>
+                                <li class="elements5">Laragon</li>
+                            </ul>
+                        </td>
+                        <td id="content_class2" class = "content_table"><a href="#" target="_blank"><img src="./assets/php_elephant_icon_124889.png" alt="php logo" width="100"></a></td>
+                    </tr>
+                    
+
+                    
+                </table>
+            </div>
+        </section>
+
+        <!-- Message section, for contacting porpouses-->
+        <section class="section3">
+            <form action="/send" method="post" id="formulary_id">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+            
+                <label for="email">email:</label>
+                <input type="text" id="email" name="email"  required >
+                
+            
+                <label for="message">message:</label>
+                <textarea type="text" id="message" name="message" required></textarea>
+
+                <input type="submit" name="submit" id="submit_button">
+            </form>
+        </section>
+    </main>
+    
+    <!-- Footer for acces to my social media-->
+    <footer id="Bottom">
+        <p class="bottom1"><a href="https://github.com/Windtheking" target="_blank"><img src="./assets/github_git_icon_145985.png" alt="" height="70"></a></p>
+        <p class="bottom2"><a href="www.linkedin.com/in/santiag0-m3ndoza" target="_blank"><img src="./assets/in_linked_linkedin_media_social_icon_124259.png" alt="" height="60"></a></p>
+        <p class="bottom3"><a href="#top">Back to the Top</a></p>
+    </footer>
+    
+
+    <!--Not working js file -->
+    <script src="./logic.js"></script>
+</body>
+</html>

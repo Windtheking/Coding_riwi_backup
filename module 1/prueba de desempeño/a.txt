@@ -1,0 +1,34 @@
+The Initial program is needed to be used step by step, for the main option of the CRUD method (create, read, update, delete) you need to enter the selection you chose, to register a new book you need to first have in mind that you wont be able to insert values in a empty or none existent key you need to create the new key first to insert values inside of it not to insert it instantly, for the consult you need to insert the name of what you want to see and the press enter to go back for the updates you need to first choose the value to update and then insert what is required for it and lastly for deletion you only need to insert values needed do have in mind you cannot erase none existent values
+
+for the costumer wants a book option you only need to insert the values ask of you from the console and the program will obtain based on how many books you want of the same how much you have to pay or if you have discount or not, do have in mind that it is needed this option for you to be able to succesfully proceed with the overall repot
+
+the overall report will have to, show the 3 best sellers and overall sales but also the gross and net income, have in mind that if you dont have any previouys costumers the incomce will apear negative always
+
+Project made with
+
+- Python
+- Visual estudio
+
+
+
+
+Tareas
+tareas punto 1
+    ¬ crear funcion 1 database registrar libros
+        
+        - pendiente: no permitir ingresar espacios en blanco o notificar que no fueron insertados
+        - pendiente: No permitir sobreescribir libros existentes
+        - pendiente: no permitir valores negativos en stock y precio
+        - pendiente: eliminar los pprints
+        - pendiente: corregir cuando inserten valores de nuevos libros siempre en minusculas
+
+  
+TAREAS PUNTO 2
+    ¬ Obtencion de datos para cliente:
+        - pendiente: evtar que inserte lo que sea menos una fecha con dia mes y año
+
+TAREAS PUNTO 3
+    ¬ Funcion para los 3 mejores selers: no totalmente funcional
+    ¬ Funcion para Generar reporte de ventas totales agrupado por autor.
+Pendientes
+¬ Encontrar la causa de porque el main menu se reinicia cuando "salgo" de la app
