@@ -1,4 +1,10 @@
 
+let mainInBody = document.createElement("main")
+let newDiv = document.createElement("div")
+const mylist = document.getElementById("Mylist")
+const secondList = document.createElement("ul")
+// const divInBody = document.createElement("section")
+
 // Declaration of object and elements in div
 const products ={
     1: {id:"1" , name:"Laptop" , price: 1500},
@@ -7,9 +13,21 @@ const products ={
 }
 
 
+// Program Html content insertion
+document.body.appendChild(mainInBody)
+newDiv.textContent = 'Object products'
+newDiv.className = "Div1";
+mainInBody.appendChild(newDiv)
 
 // Program initialization
-console.log(`\nObject products`, products)
+mylist.textContent = 'Object data gestion'
+
+
+
+
+
+
+
 
 // Object conversion to a set
 const productSet = new Set(Object.values(products).map(products => products.name))
@@ -34,12 +52,19 @@ for (const product of productSet){
 
 // productMap iteration
 productMap.forEach((products, key) => {
-    console.log(`\nCategory: ${key}, Product(s): ${products} `);
+    let newlistItem = document.createElement('li')
+    newlistItem.textContent = `Category: ${key}  |  Product(s): ${products}`
+    mylist.appendChild(newlistItem)
 })
 
 // Validations and testing
-console.log("\nData gestion, testing complete");
-console.log("Products list(Object)", products);
+
+let newdiv1 = document.createElement("div")
+newdiv1.className = "Div2";
+newdiv1.textContent = "Data gestion, testing complete";
+mainInBody.appendChild(newdiv1)
+// mainInBody.appendChild("Products list(Object)", products));
+// mainInBody.appendChild("Products list(Object)", products));
 console.log("Products list(Set)", productSet);
 console.log("Products list(Map)", productMap);
 

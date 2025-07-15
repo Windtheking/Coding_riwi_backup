@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Libertinus+Mono&family=Oswald:wght@200..700&display=swap');
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+main{
+    
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    background-color: blue;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.Div1{
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 50%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.Div2{
+    display: flex;
+    background-color: rgb(94, 94, 94);
+    width: 100%;
+    height: 50%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
