@@ -1,8 +1,10 @@
 
 let mainInBody = document.createElement("main")
 let newDiv = document.createElement("div")
+let lineSpace = document.createElement("br")
 const mylist = document.getElementById("Mylist")
-const secondList = document.createElement("ul")
+const secondList = document.getElementById("Mylist2")
+const thirdList = document.getElementById("Mylist3")
 // const divInBody = document.createElement("section")
 
 // Declaration of object and elements in div
@@ -22,13 +24,6 @@ mainInBody.appendChild(newDiv)
 // Program initialization
 mylist.textContent = 'Object data gestion'
 
-
-
-
-
-
-
-
 // Object conversion to a set
 const productSet = new Set(Object.values(products).map(products => products.name))
 console.log("\nUnique products Set", productSet)
@@ -40,15 +35,24 @@ const productMap = new Map([
 ])
 console.log("Products and categories Map", productMap)
 
+let pCointainer = document.createElement('p')
+pCointainer.textContent = 'This is the Map array'
+pCointainer.className = "Ptext1"
+mylist.appendChild(pCointainer)
 
 // Product object iteration with for...in and for...of
 for (const id in products){
-    console.log(`\nProduct ID: ${id}, Details:`, products[id])
+    let newlistItem = document.createElement('li')
+    newlistItem.textContent = `Product ID: ${id}, Details:`, products[id]
+    secondList.appendChild(newlistItem)
 }
 
-for (const product of productSet){
-    console.log(`\nUnique product: `, product)
+for (const product of productSet) {
+  let newlistItem = document.createElement('li');
+  newlistItem.textContent = `Unique product: ${product}`;
+  secondList.appendChild(newlistItem);
 }
+
 
 // productMap iteration
 productMap.forEach((products, key) => {
