@@ -20,7 +20,7 @@ body{
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     body {
         background-color: #D6EFFF;
     }
@@ -103,6 +103,7 @@ body{
         justify-content: center;
         align-items: center;
         border-radius: 0vh 0vh 3vh 0vh;
+        padding: 3vh;
     }
 }
 
@@ -178,5 +179,6 @@ body{
         justify-content: center;
         align-items: center;
         border-radius: 0vh 0vh 3vh 0vh;
+        padding: 3vh;
     }
 }

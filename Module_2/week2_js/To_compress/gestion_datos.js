@@ -35,9 +35,14 @@ const productMap = new Map([
 ])
 console.log("Products and categories Map", productMap)
 
+
+// every "document.createElement" is used to create new elements to inert information with appendchild
 let pCointainer = document.createElement('p')
+// every "textConent" variable is used to add to a created element the content needed
 pCointainer.textContent = 'This is the Map array'
+// every "className" variable is to asign a class to the created element 
 pCointainer.className = "Ptext1"
+// every "appendChild" is used to add created elements to others
 mylist.appendChild(pCointainer)
 
 // Product object iteration with for...in and for...of
@@ -49,6 +54,7 @@ for (const id in products){
     mylist.appendChild(newlistItem)
 }
 
+// productSet iteration
 for (const product of productSet) {
     console.log("Funciona 2");
     let newlistItem = document.createElement('li');
@@ -68,10 +74,8 @@ productMap.forEach((products, key) => {
 
 let newdiv1 = document.createElement("div")
 newdiv1.className = "Div2";
-newdiv1.textContent = "Data gestion, testing complete";
+newdiv1.textContent = "Data gestion, testing complete (for more information, check the console of the web)";
 mainInBody.appendChild(newdiv1)
-// mainInBody.appendChild("Products list(Object)", products));
-// mainInBody.appendChild("Products list(Object)", products));
 console.log("Products list(Set)", productSet);
 console.log("Products list(Map)", productMap);
 

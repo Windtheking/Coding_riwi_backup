@@ -11,6 +11,7 @@ for it's proper use please do check if you have the propper extension to run the
 - Acces to VS code or browser console
 
 
+
 ```javascript
 for (const id in products){
     console.log(`Product ID: ${id}, Details:`, products[id])

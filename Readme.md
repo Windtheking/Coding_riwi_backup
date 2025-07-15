@@ -5,5 +5,6 @@
 (Module 2 only at the moment)
 -------------
 
-This is the backup repository, link to the original repository:***<a href = "https://github.com/Windtheking/Coding-riwi.git"> here</a>***
+This is the backup repository, link to the original (corrupted) repository:***<a href = "https://github.com/Windtheking/Coding-riwi.git"> here</a>***
+you can acces the original repository to check the past commits that can no longer be made
 
