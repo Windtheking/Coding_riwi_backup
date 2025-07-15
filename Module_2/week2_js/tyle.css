@@ -13,51 +13,169 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 100%;
+    width: 99.5%;
+    background-color: #D6EFFF; 
+    color: #0B3C5D; 
 }
 
-main{
-    
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+
+
+@media (max-width: 768px) {
+    body {
+        background-color: #D6EFFF;
+    }
+
+     main{
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        background-color: #D6EFFF;
+        
+    }
+
+    li {
+        display: flex;
+        padding-left: 1vh;
+    }
+
+    #Mylist {
+        background-color: #D1B3FF; 
+        border-radius: 3vh 0vh 0vh 0vh;
+    }
+
+    #Mylist2 {
+        background-color: #FFA7D1;
+        border-radius: 0vh 0vh 0vh 0vh;
+    }
+
+    #Mylist3 {
+        background-color: #FF2D95; 
+        border-radius: 0vh 0vh 0vh 3vh;
+    }
+
+    .listcolective {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: #8233FF; 
+        color: white;
+        width: 100%;
+        height: 30%;
+        gap: 1rem;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        border-top: solid rgb(228, 55, 255);
+        border-bottom: solid rgb(228, 55, 255);
+        border-right: solid rgb(228, 55, 255);
+    }
+
+    .Div1 {
+        display: flex;
+        background-color: #8233FF; 
+        width: 100%;
+        height: 70%;
+        color: rgb(255, 255, 255);
+        justify-content: center;
+        align-items: center;
+        padding: 3vh;
+        font-size: 2rem;
+        border-radius: 0vh 3vh 0vh 0vh;
+    }
+
+    .Ptext1 {
+        color: #ffffff;
+        display: flex;
+        font-size: 4vh;
+    }
+
+    .Div2 {
+        display: flex;
+        background-color: #D1B3FF; 
+        width: 100%;
+        height: 20%;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0vh 0vh 3vh 0vh;
+    }
 }
 
-#Mylist{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-color: blue;
-    color: white;
-    width: 100%;
-    height: 100%;
-    gap: 1rem;
-}
+@media (min-width: 768px) {
+    main{
+        height: 100%;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        background-color: #D6EFFF;
+        box-shadow:1vh;
+    }
 
-.Div1{
-    display: flex;
-    background-color: black;
-    width: 100%;
-    height: 20%;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    font-size: 5rem;
-}
+    #Mylist{
+        background-color: #85C1E9;
+        border-radius: 3vh 0vh 0vh 0vh;
+    }
 
-.ptext1{
-    display: flex;
-}
+    #Mylist2{
+        background-color: #5CA0D3;
+        border-radius: 0vh 0vh 0vh 0vh;
+    }
 
-.Div2{
-    display: flex;
-    background-color: rgb(94, 94, 94);
-    width: 100%;
-    height: 80%;
-    color: white;
-    justify-content: center;
-    align-items: center;
+
+    #Mylist3{
+        background-color: #85C1E9;
+        border-radius: 0vh 0vh 0vh 3vh;
+    }
+
+    .listcolective{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: blue;
+        color: white;
+        width: 100%;
+        height: 30%;
+        gap: 1rem;
+        margin-left: 1.5vh;
+        padding-top:1vh;
+        padding-bottom: 1vh;
+    }
+
+    .Div1{
+        display: flex;
+        background-color: #106BA3;
+        width: 100%;
+        height: 70%;
+        color: rgb(255, 255, 255);
+        justify-content: center;
+        align-items: center;
+        padding: 3vh;
+        font-size: 5rem;
+        border-radius: 0vh 3vh 0vh 0vh;
+    }
+
+    .Ptext1{
+        color: #ffffff;
+        display: flex;
+        font-size: 4vh;
+    }
+
+    .Div2{
+        display: flex;
+        background-color: #274560;
+        width: 100%;
+        height: 20%;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0vh 0vh 3vh 0vh;
+    }
 }

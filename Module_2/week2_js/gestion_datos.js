@@ -26,7 +26,7 @@ mylist.textContent = 'Object data gestion'
 
 // Object conversion to a set
 const productSet = new Set(Object.values(products).map(products => products.name))
-console.log("\nUnique products Set", productSet)
+console.log(`Unique products Set ${productSet}`)
 
 // Map creation for categorizing products
 const productMap = new Map([
@@ -42,15 +42,18 @@ mylist.appendChild(pCointainer)
 
 // Product object iteration with for...in and for...of
 for (const id in products){
+    console.log("Funciona 1");
     let newlistItem = document.createElement('li')
-    newlistItem.textContent = `Product ID: ${id}, Details:`, products[id]
-    secondList.appendChild(newlistItem)
+    let theforid = products[id]
+    newlistItem.textContent = `Product ID: ${id}, Details: Name ->${theforid.name}, Price: $${theforid.price}` 
+    mylist.appendChild(newlistItem)
 }
 
 for (const product of productSet) {
-  let newlistItem = document.createElement('li');
-  newlistItem.textContent = `Unique product: ${product}`;
-  secondList.appendChild(newlistItem);
+    console.log("Funciona 2");
+    let newlistItem = document.createElement('li');
+    newlistItem.textContent = `Unique product: ${product}`;
+    secondList.appendChild(newlistItem);
 }
 
 
@@ -58,7 +61,7 @@ for (const product of productSet) {
 productMap.forEach((products, key) => {
     let newlistItem = document.createElement('li')
     newlistItem.textContent = `Category: ${key}  |  Product(s): ${products}`
-    mylist.appendChild(newlistItem)
+    thirdList.appendChild(newlistItem)
 })
 
 // Validations and testing
