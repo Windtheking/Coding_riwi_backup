@@ -1,0 +1,50 @@
+/* Animation that gently grows and shrinks the element to grab attention */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box; 
+}
+
+/* Main layout container with grid and center alignment */
+body{
+    display: flex;
+    flex-wrap: wrap;
+    background-color:#9D9D9D;
+}
+
+.a_big_header{
+    display: flex;
+    height: 10vh;
+}
+
+
+
+main{
+    display: flex;
+    width: 100%;
+    background-color: #F2F2F2;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    position: absolute;
+}
+
+
+@media (max-height: 480px) {
+    body{
+        height: 480px;
+    }
+}
+
+@media (max-height: 768px) {
+    body{
+        height: 768px;
+    }
+}
+
+@media (max-height: 1080px) {
+    body{
+        height: 1080px;
+    }
+}
