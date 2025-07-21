@@ -85,7 +85,12 @@ To open the project file for module 2  week 2, follow this folder path
 ## **Instructions** ##
 -------------
 1. Open the `Module 2` folder.
-2. Go into the `week 2` folder.
-3. Open the `Poryect html CV` folder.
-4. Inside, you will find the `index.html` file.
+2. Go into the `week_3` folder.
+3. Inside, you will find the needed files.
 
+# **JavaScript Project File (JS week 3 project)** #
+
+To obtaing the code to the main JavaScript file 
+for this assignation, follow this folder path:
+
+`Coding\Modulo 2\week3_js`
