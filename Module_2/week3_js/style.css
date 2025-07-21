@@ -1,12 +1,14 @@
+/* This import brings in the Bitcount font for the whole project */
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap');
 
+/* Animation for the background gradient, makes the background move smoothly */
 @keyframes smoth_transition {
     0%{background-position: 0% 50%;}
     50%{background-position: 100% 50%;}
     100%{background-position: 0% 50%;}
-    
 }
 
+/* Reset and base font for the whole page */
 *{
     padding: 0;
     margin: 0;
@@ -15,6 +17,7 @@
     font-optical-sizing: auto;
 }
 
+/* The body uses a moving gradient background and is set up for flex layout */
 body{
     display: flex;
     flex-direction: column;
@@ -26,6 +29,7 @@ body{
     animation: smoth_transition 10s ease infinite;
 }
 
+/* The header is fixed at the top and styled with a dark background */
 header{
     display: flex;
     flex-direction: column;
@@ -38,10 +42,12 @@ header{
     color: white;
 }
 
+/* Center the header text */
 header h1, h3{
     text-align: center;
 }
 
+/* Navigation bar is a flex row with space between items */
 header ul{
     display: flex;
     list-style:none ;
@@ -49,6 +55,7 @@ header ul{
     margin-top: 5px;
 }
 
+/* Navigation links are white and underlined on hover */
 header ul li a{
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -58,6 +65,7 @@ header ul li a:hover{
     text-decoration: underline;
 }
 
+/* Main content is pushed down to make space for the fixed header */
 main{
     padding-top:15vh ;
     display: flex;
@@ -65,35 +73,37 @@ main{
     justify-content: center;
     align-items: center;
     order: 2;
-
 }
 
+/* Section for all forms and the product table */
 #section1{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 100%;
     width: 100%;
-
 }
 
+/* Read area centers the table */
 #Read{
     display: flex;
     justify-content: center;    
     height: 20%;
 }
 
+/* Table headers and body have a magenta background */
 #Read tbody, thead{
     text-align: center;
     background-color: #ff00ff  ;
 }
 
-
+/* Table cells are white text with padding */
 #Read tbody td, thead th{
     padding: 10px;
     color: white;
 }
 
+/* All forms share this style: column layout, cyan background, rounded corners */
 .formulary{
     display: flex;
     flex-direction: column;
@@ -109,6 +119,7 @@ main{
     box-shadow: 0.5vh 0 2vh 0 black;
 }   
 
+/* Inputs for product name and price are dark with rounded corners */
 .formulary #Product_name, #Product_price{
     background: none;
     border: none;
@@ -118,6 +129,7 @@ main{
     border-radius: 1vh;
 }
 
+/* General input style for all inputs in forms */
 .formulary .inputStyle{
     background: none;
     border: none;
@@ -127,6 +139,7 @@ main{
     border-radius: 1vh;
 }
 
+/* Buttons in forms are white, rounded, and have a little margin */
 .formulary .butonStyle{
     border-radius:1vh ;
     background-color: white;
@@ -135,6 +148,7 @@ main{
     height: 5vh;
 }
 
+/* Redundant style for product name and price inputs (could be merged) */
 .formulary #Product_name, #Product_price{
     background: none;
     border: none;
@@ -144,10 +158,12 @@ main{
     border-radius: 1vh;
 }
 
+/* Specific height for the update form */
 #form2{
     height: 25%;
 }
 
+/* Footer is dark and centered */
 footer{
     display: flex;
     justify-content: center;
@@ -158,14 +174,14 @@ footer{
     color: white;
 }
 
+/* Responsive for mobile: taller header and main, shorter animation */
 @media (max-width: 480px) {
 
     @keyframes smoth_transition {
     0%{background-position: 0% 50%;}
     50%{background-position: 82.5% 50%;}
     100%{background-position: 0% 50%;}
-    
-}
+    }
 
     header{
         height: 25vh;
