@@ -3,10 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
-    <script src = "gestion_api.js" type="module"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <ul id="listproducts"></ul>
+    <header>
+        <div>
+            <h1>Welcome to the inventory note taker</h1>
+            <h3>If you wanna do a procedure click on the following depending on your request</h3>
+            <hr>
+        </div>
+        <nav>
+            <ul>
+                <li><H3><a href="#form1">Create</a></H3></li>
+                <li><H3><a href="#Read">Read</a></H3></li>
+                <li><H3><a href="#form2">Update</a></H3></li>
+                <li><H3><a href="#form3">Delete</a></H3></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section id="section1">
+            <!-- Div container for the read protocol -->
+            <div id="Read">
+                <!-- Display the database products -->
+                <table>
+                    <thead>
+                        
+                        <tr id="tableHead">
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="tableData">
+
+                        </tr>
+                        <tr id="tableData2">
+
+                        </tr>
+                    </tbody>
+                    </table>
+            </div>
+            <form action="" id="form1" class="formulary">
+                <!-- Create a new product inside the data base -->
+                    <h2>Product Adding</h2>
+                    <label for="name">Product</label>
+                    <input class="inputStyle" id="Product_name" type="text" placeholder="Insert the product name" required>
+                    <label for="name">Price</label>
+                    <input class="inputStyle" id="Product_price" type="text" placeholder="Insert the product price" required>
+                    <button class="butonStyle" id="mainBtn" type="submit">Submit new product</button>
+                
+            </form>
+                        
+            <!-- Update a new product inside the data base -->
+            <form action="" id ="form2" class="formulary" >
+
+                <h2>Product Updating</h2>
+                <label for="">New Product Name</label>
+                <input class="inputStyle" id="Update_Product_name" type="text" placeholder="Insert the product new name" required>
+                
+                <label for="">New Product Price</label>
+                <input class="inputStyle" id="Update_Product_price" type="text" placeholder="Insert the product new price" required>
+                
+                <label for="">Id for searching</label>
+                <input class="inputStyle" id="Product_id" type="text" placeholder="Insert the product id">
+
+                    
+                <button class="butonStyle" id="mainBtn2" type="submit">Update product</button>
+            </form>
+            <!-- Delete a product inside the data base -->
+            <form action="" id="form3" class="formulary">
+                <h2>Product deleting</h2>
+                <label for="">Id for deletion</label>
+                <input class="inputStyle" type="text" id="Input_for_deletion" placeholder="Insert the product id" required>
+                
+                <button class="butonStyle" id="mainBtn3" type="submit">Delete product</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Riwi project all rights reserved &copy;</p>
+    </footer>
+    <script src = "gestion_api.js" type="module"></script>
 </body>
 </html>
